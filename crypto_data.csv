@@ -1,4 +1,4 @@
-#,Name,Symbol,Market Cap,Price,Circulating Supply,Volume (24h),% 1h,% 24h,% 7d
+ID,Name,Symbol,Market Cap,Price,Circulating Supply,Volume (24h),% 1h,% 24h,% 7d
 1,Bitcoin,BTC,"$39,229,677,772",$2399.51,"16,349,037","$1,539,420,000",-1.71%,4.65%,31.40%
 2,Ethereum,ETH,"$17,707,728,697",$192.71,"91,888,436","$496,608,000",-11.37%,6.34%,114.03%
 3,Ripple,XRP,"$12,350,294,997",$0.320516,"38,532,538,149*","$139,165,000",-1.49%,-4.61%,-15.79%
