@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+import mysql.connector
+
+mydb=mysql.connector.connect(
+    host="db",
+    usier="nicky",
+    password="root"
+)
+print(mydb)
 
 crypto_data = open("crypto_data.csv","r")
 
