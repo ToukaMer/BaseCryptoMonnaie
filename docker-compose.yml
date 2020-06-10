@@ -19,6 +19,8 @@ services:
    MYSQL_DATABASE: cryptoDB
    MYSQL_USER: nicky
    MYSQL_PASSWORD: root
+  volumes:
+  - db_data:/var/lib/mysql
 
  adminer:
   image: adminer
@@ -30,3 +32,4 @@ services:
 
 volumes:
  logvolume01: {}
+ db_data: {}
