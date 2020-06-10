@@ -17,7 +17,7 @@ line = crypto_data.readlines()
 
 mycursor = mydb.cursor()
 
-mycursor.execute("CREATE TABLE monnaies (ID int, Name VARCHAR(255), Symbol VARCHAR(255), Market_Cap VARCHAR(255), Price VARCHAR(255), Circulating_Supply VARCHAR(255), Volume VARCHAR(255), pourcentage_1h VARCHAR(255), pourcentage_24h VARCHAR(255), pourcentage_7j VARCHAR(255))")
+mycursor.execute("CREATE TABLE IF NOT EXISTS monnaies (ID int, Name VARCHAR(255), Symbol VARCHAR(255), Market_Cap VARCHAR(255), Price VARCHAR(255), Circulating_Supply VARCHAR(255), Volume VARCHAR(255), pourcentage_1h VARCHAR(255), pourcentage_24h VARCHAR(255), pourcentage_7j VARCHAR(255))")
 
 for i in range (1,833):
     row = line[i].split(',')
