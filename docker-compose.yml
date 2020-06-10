@@ -7,6 +7,8 @@ services:
   volumes:
   - .:/opt/pythonProjet
   - logvolume01:/var
+  links:
+  - db
 
  db:
   image: mysql
