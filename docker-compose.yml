@@ -5,7 +5,6 @@ services:
  python:
   build: .
   volumes:
-  - .:/opt/pythonProjet
   - logvolume01:/var
   links:
   - mysql_db

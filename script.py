@@ -4,7 +4,7 @@ import mysql.connector
 
 mydb=mysql.connector.connect(
     host="mysql_db",
-    port="8080",
+    port="3306",
     user="nicky",
     password="root"
 )
