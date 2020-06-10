@@ -8,9 +8,9 @@ services:
   - .:/opt/pythonProjet
   - logvolume01:/var
   links:
-  - db
+  - mysql_db
 
- db:
+ mysql_db:
   image: mysql
   command: --default-authentication-plugin=mysql_native_password
   restart: always
@@ -28,8 +28,7 @@ services:
   ports:
    - 8080:8080
   links:
-   - db
-
+   - mysql_db
 volumes:
  logvolume01: {}
  db_data: {}
